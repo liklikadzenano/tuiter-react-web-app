@@ -1,8 +1,12 @@
 body {
-    background-color: black;
-    color: white;
-    margin-left: 2%;
-    margin-right: 2%;
+    /*background-color: black;*/
+    /*color: white;*/
+    /*margin-left: 2%;*/
+    /*margin-right: 2%;*/
+}
+
+.wd-ul {
+    background-color: #1D1E20;
 }
 
 /* all the text elements below */
@@ -124,6 +128,24 @@ h3 {
     text-decoration: none;
     font-size: 50px;
     margin-right: 12px;
+
+}
+
+.wd-picture-parent {
+    position:relative;
+}
+
+.wd-picture-title {
+    position: absolute;
+    color: white;
+    bottom: 1px;
+    left: 0px;
+
+}
+
+.wd-search-tuiter {
+    bottom: 10px;
+    left: 10px;
 
 }
 
