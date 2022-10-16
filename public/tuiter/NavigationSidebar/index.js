@@ -1,8 +1,6 @@
-function NavigationSidebar() {
-    // eslint-disable-next-line no-undef
-    $(`#wd-nav-side-bar`).append(`
-    
-    <div class="col-xxl-2 col-xl-3 col-lg-1 col-md-2 col-sm-1">
+const NavigationSidebar = ()=> {
+    return (`
+            <div class="col-xxl-2 col-xl-3 col-lg-1 col-md-2 col-sm-1">
             <!--using list-group to make the list of hyperlinks that we see on the left -->
                 <ul class="list-group">
                     <li class="list-group-item bg-dark">
@@ -114,10 +112,7 @@ function NavigationSidebar() {
                 <button class="btn btn-primary w-100 mt-1 rounded-pill " > Tuit </button>
 
             </div>
-    
-    
     `)
 
 }
-// eslint-disable-next-line no-undef
-$ (NavigationSidebar())
+export default NavigationSidebar;

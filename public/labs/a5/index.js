@@ -59,6 +59,8 @@ console.log(sortaTrue)
 let notTrue   = '1' === 1
 console.log(notTrue)
 
+
+
 // 2.5.1 If Else
 
 console.log('If else');

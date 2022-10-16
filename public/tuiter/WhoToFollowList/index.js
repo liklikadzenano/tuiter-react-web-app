@@ -1,10 +1,11 @@
 import who from "./who.js"
+import NavigationSidebar from "../NavigationSidebar";
 
 
 
-function WhoToFollowList(who) {
+const WhoToFollowList = (who) => {
         // eslint-disable-next-line no-undef
-        $(`#wd-who-to-follow`).append(`
+        return (`
         <div class="col-xxl-4 col-xl-3 col-lg-4 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
         <ul class="list-group bg-dark">
         <li class="list-group-item fw-bolder text-white bg-dark">
@@ -32,15 +33,14 @@ function WhoToFollowList(who) {
                     </li>
                 
                 
-                `))
+                `) )
                 }
 
                            
 
                 </ul>
-                 </div>
+                </div>
     `)
 }
+export default WhoToFollowList;
 
-// eslint-disable-next-line no-undef
-$ (WhoToFollowList(who))
