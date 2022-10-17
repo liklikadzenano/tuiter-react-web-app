@@ -1,29 +1,28 @@
- import NavigationSidebar from "../NavigationSidebar/index.js"
- import who from "../WhoToFollowList/who.js"
- import WhoToFollowList from "../WhoToFollowList/index.js"
-
-
+import NavigationSidebar from "../NavigationSidebar/index";
+import WhoToFollowList from "../WhoToFollowList/index";
+import ExploreComponent from "../ExploreScreen/ExploreComponent";
 
 function exploreComponent() {
     // eslint-disable-next-line no-undef
     $('#wd-explore').append(`
-       <h2>Explore</h2>
-  <div class="row mt-2">
-<!--  navigation sidebar right-->
-   <div class="col-2 col-md-2 col-lg-1 col-xl-2 bg-warning">
-    ${NavigationSidebar()}
-   </div>
-   <div class="col-10 col-lg-7 col-xl-6 bg-primary">
-    <h3>ExploreComponent</h3>
-   </div>
-   <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 bg-danger">
-    ${WhoToFollowList(who)}
-   </div>
+      
+  <div class="row">
+  
+       <div class="col-xxl-2 col-xl-3 col-lg-1 col-md-2 col-sm-1">
+       ${NavigationSidebar()}
+       </div>
+       <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-10 col-sm-11">
+       ${ExploreComponent()}
+       </div>
+       <div class="col-xxl-4 col-xl-3 col-lg-4 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
+       ${WhoToFollowList()}
+        
+       </div>
   </div>
    `);
-
 }
-
 // eslint-disable-next-line no-undef
 $(exploreComponent);
+
+
 
