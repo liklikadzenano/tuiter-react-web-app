@@ -1,5 +1,6 @@
 import PostSummaryList from "../PostSummaryList/index";
 
+
 const ExploreComponent = () => {
     return (`
     
@@ -38,7 +39,7 @@ const ExploreComponent = () => {
 
                 <!--below div groups the picture and the title on the picture together -->
                 <div class="position-relative">
-                <img src="starship.jpg" width="100%"/>
+                <img src="../explore/starship.jpg" width="100%"/>
                 <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship </h1>
                 </div>
                 

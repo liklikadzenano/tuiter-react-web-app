@@ -1,6 +1,6 @@
-import NavigationSidebar from "../NavigationSidebar/index";
-import WhoToFollowList from "../WhoToFollowList/index";
-import ExploreComponent from "../ExploreScreen/ExploreComponent";
+import WhoToFollowList from "../WhoToFollowList";
+import NavigationSidebar from "../NavigationSidebar";
+
 
 function exploreComponent() {
     // eslint-disable-next-line no-undef
@@ -12,7 +12,7 @@ function exploreComponent() {
        ${NavigationSidebar()}
        </div>
        <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-10 col-sm-11">
-       ${ExploreComponent()}
+
        </div>
        <div class="col-xxl-4 col-xl-3 col-lg-4 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
        ${WhoToFollowList()}

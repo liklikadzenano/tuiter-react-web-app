@@ -1,4 +1,4 @@
-import WhoToFollowListItem from "./WhoToFollowListItem.js";
+import WhoToFollowListItem from "./WhoToFollowListItem";
 import who from "./who"
 
 const WhoToFollowList = () => {
@@ -12,6 +12,7 @@ const WhoToFollowList = () => {
 
          
         ${who.map(each => (WhoToFollowListItem(each)))}
+        
 
         </ul>
                
