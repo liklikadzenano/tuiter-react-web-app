@@ -1,10 +1,12 @@
+import "./index.css"
+
 import {Link, useNavigate} from "react-router-dom";
-import React, {useState} from "react"
+import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {updateProfile} from "./profile-reducer";
 
 const EditProfile = () => {
-    const profile = useSelector(state=>state.profile);
+    const profile = useSelector(state => state.profile);
     const navigate = useNavigate();
     const dispatch = useDispatch()
 
@@ -13,7 +15,8 @@ const EditProfile = () => {
     const [location, setLocation] = useState(profile.location)
     const [website, setWebsite] = useState(profile.location)
     const birth = profile.dateOfBirth.split("/")
-    const[dateOfBirth, setDateOfBirth] = useState(birth[0]+" " + birth[1]+ " "+ birth[2])
+    const [dateOfBirth, setDateOfBirth] = useState(birth[0] + " " + birth[1] + " " + birth[2])
+
 
     const updateProfileHandler = () => {
         dispatch(updateProfile({name, bio, location, website, dateOfBirth}));
@@ -36,26 +39,42 @@ const EditProfile = () => {
 
                 <div className={"col-6"}>
                     <button className={"btn btn-dark float-end rounded-pi"}
-                        onClick={updateProfileHandler}>
+                            onClick={updateProfileHandler}>
                         Save
-
                     </button>
                 </div>
             </div>
 
-            <div className={"row position-relative"}>
-                <img src={profile.bannerPicture}/>
+            <div className={"row position-relative pt-2 "}>
+                <img height={250} width={300} src={profile.bannerPicture}/>
+            </div>
+
+
+            <div className={"row pb-3"}>
+                <div className={"col-8 position-relative"}>
+                    <img src={profile.profilePicture}
+                         className={"rounded-circle position-absolute wd-nudge-up-more"}
+                         height={100}
+                         width={100}/>
+                </div>
+
+                <div className={"positione-relative"}>
+                    <i className="wd-camera bi bi-camera position-relative"></i>
+                </div>
+
             </div>
 
 
             <form>
-                <div className={"form-group pt-2"}>
+                <div className={"form-group pt-3"}>
                     <div className={"border border-secondary rounded-2 border-opacity-25 p-1"}>
                         <label className={"ps-2 text-secondary fs-6"} htmlFor={"nameField"}>
                             Name
                         </label>
                         <input type={"text"} className={"form-control border-0 ps-2"}
-                        id={"nameField"} value={"Name"} onChange={event=>{setName(event.target.value)}}/>
+                               id={"nameField"} value={"Name"} onChange={event => {
+                            setName(event.target.value)
+                        }}/>
                     </div>
                 </div>
 
@@ -65,7 +84,9 @@ const EditProfile = () => {
                             Bio
                         </label>
                         <textarea type={"text"} className={"form-control border-0 ps-2"}
-                               id={"bioField"} value={"bio"} onChange={event=>{setBio(event.target.value)}}/>
+                                  id={"bioField"} value={"bio"} onChange={event => {
+                            setBio(event.target.value)
+                        }}/>
                     </div>
                 </div>
 
@@ -75,7 +96,9 @@ const EditProfile = () => {
                             Location
                         </label>
                         <input type={"text"} className={"form-control border-0 ps-2"}
-                               id={"locationField"} value={"Location"} onChange={event=>{setLocation(event.target.value)}}/>
+                               id={"locationField"} value={"Location"} onChange={event => {
+                            setLocation(event.target.value)
+                        }}/>
                     </div>
                 </div>
 
@@ -85,7 +108,9 @@ const EditProfile = () => {
                             Website
                         </label>
                         <input type={"text"} className={"form-control border-0 ps-2"}
-                               id={"webField"} value={"Website"} onChange={event=>{setWebsite(event.target.value)}}/>
+                               id={"webField"} value={"Website"} onChange={event => {
+                            setWebsite(event.target.value)
+                        }}/>
                     </div>
                 </div>
 
@@ -96,21 +121,26 @@ const EditProfile = () => {
                             Date Of Birth
                         </label>
                         <input type={"date"} className={"form-control border-0 ps-2"}
-                               id={"birthField"} value={"Birth Date"} onChange={event=>{setDateOfBirth(event.target.value)}}/>
+                               id={"birthField"} value={"Birth Date"} onChange={event => {
+                            setDateOfBirth(event.target.value)
+                        }}/>
                     </div>
                 </div>
             </form>
 
 
-            <div className={"pt-2"}>
-                <h5>  switch to professional </h5>
+            <div className={"pt-3"}>
+                <button classsName={"btn btn-light w-100 border border-none"}>
+                <h5 className={"float-start pt-2"}> switch to professional </h5>
+                    <i className="bi bi-arrow-right pt-1 float-end"></i>
+
+               </button>
             </div>
 
+            <br/> <br/>
 
 
         </>
     )
-
-
 }
 export default EditProfile

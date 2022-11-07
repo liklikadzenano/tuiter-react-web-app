@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css"
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom"
 
