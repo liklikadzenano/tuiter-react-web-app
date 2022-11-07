@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 
 
 const currentProf = {
@@ -26,12 +26,12 @@ const profileSlice = createSlice({
 
                                       updateProfile(state, action) {
                                            const updatedProfile = action.payload;
-                                           let [firstName, ...lastName] = updatedProfile.name.split(' ');
-                                           lastName = lastName.jon(' ');
+                                           let [firstName, ...lastName] = updatedProfile.name.split('');
+                                           lastName = lastName.jon('');
                                            const bio = updatedProfile.bio;
                                            const location = updatedProfile.location;
                                            const website = updatedProfile.website
-                                           const [year, month, day] = updatedProfile.dateOfBirth.split("-")
+                                           const [year, month, day] = updatedProfile.birthDay.split("-")
                                            const dateOfBirth = [month, day, year].join("/");
                                            return {...state, firstName,lastName, bio, location, website, dateOfBirth}
 

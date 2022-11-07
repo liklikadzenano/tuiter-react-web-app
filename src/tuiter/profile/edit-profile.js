@@ -1,6 +1,7 @@
 import "./index.css"
 
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
+import{useNavigate} from "react-router";
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {updateProfile} from "./profile-reducer";
@@ -13,13 +14,13 @@ const EditProfile = () => {
     const [name, setName] = useState(profile.firstName + " " + profile.lastName)
     const [bio, setBio] = useState(profile.bio)
     const [location, setLocation] = useState(profile.location)
-    const [website, setWebsite] = useState(profile.location)
+    const [website, setWebsite] = useState(profile.website)
     const birth = profile.dateOfBirth.split("/")
-    const [dateOfBirth, setDateOfBirth] = useState(birth[0] + " " + birth[1] + " " + birth[2])
+    const [birthday, setBirthday] = useState(birth[0] + "-" + birth[0] + "-" + birth[1])
 
 
     const updateProfileHandler = () => {
-        dispatch(updateProfile({name, bio, location, website, dateOfBirth}));
+        dispatch(updateProfile({name, bio, location, website, birthday}));
         navigate("/tuiter/profile");
     }
 
@@ -38,7 +39,7 @@ const EditProfile = () => {
                 </div>
 
                 <div className={"col-6"}>
-                    <button className={"btn btn-dark float-end rounded-pi"}
+                    <button className={"btn btn-dark float-end rounded-pill"}
                             onClick={updateProfileHandler}>
                         Save
                     </button>
@@ -72,7 +73,7 @@ const EditProfile = () => {
                             Name
                         </label>
                         <input type={"text"} className={"form-control border-0 ps-2"}
-                               id={"nameField"} value={"Name"} onChange={event => {
+                               id={"nameField"} value={name} onChange={event => {
                             setName(event.target.value)
                         }}/>
                     </div>
@@ -84,7 +85,7 @@ const EditProfile = () => {
                             Bio
                         </label>
                         <textarea type={"text"} className={"form-control border-0 ps-2"}
-                                  id={"bioField"} value={"bio"} onChange={event => {
+                                  id={"bioField"} value={bio} onChange={event => {
                             setBio(event.target.value)
                         }}/>
                     </div>
@@ -96,7 +97,7 @@ const EditProfile = () => {
                             Location
                         </label>
                         <input type={"text"} className={"form-control border-0 ps-2"}
-                               id={"locationField"} value={"Location"} onChange={event => {
+                               id={"locationField"} value={location} onChange={event => {
                             setLocation(event.target.value)
                         }}/>
                     </div>
@@ -108,7 +109,7 @@ const EditProfile = () => {
                             Website
                         </label>
                         <input type={"text"} className={"form-control border-0 ps-2"}
-                               id={"webField"} value={"Website"} onChange={event => {
+                               id={"webField"} value={website} onChange={event => {
                             setWebsite(event.target.value)
                         }}/>
                     </div>
@@ -121,8 +122,8 @@ const EditProfile = () => {
                             Date Of Birth
                         </label>
                         <input type={"date"} className={"form-control border-0 ps-2"}
-                               id={"birthField"} value={"Birth Date"} onChange={event => {
-                            setDateOfBirth(event.target.value)
+                               id={"birthField"} value={birthday} onChange={event => {
+                            setBirthday(event.target.value)
                         }}/>
                     </div>
                 </div>
@@ -138,8 +139,6 @@ const EditProfile = () => {
             </div>
 
             <br/> <br/>
-
-
         </>
     )
 }
