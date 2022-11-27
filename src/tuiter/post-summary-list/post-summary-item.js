@@ -2,7 +2,7 @@ import React from "react";
 
 const PostSummaryItem = (
     {
-        post = {
+        tuit = {
             topic: "Space",
             userName: "SpaceX",
             time: "2h",
@@ -16,18 +16,18 @@ const PostSummaryItem = (
         <li className="list-group-item bg-white">
             <div className="row">
                 <div className="col-10">
-                    <div className="text-secondary fw-bolder"> {post.userName} - {post.time} </div>
+                    <div className="text-secondary fw-bolder"> {tuit.userName} - {tuit.time} </div>
 
                     <div className="fw-bolder text-black">
-                        {post.topic}
+                        {tuit.topic}
                     </div>
                     <div className="fw-bolder text-black">
-                        {post.title}
+                        {tuit.title}
                     </div>
 
                 </div>
                 <div className="col-2">
-                    <img src= {post.image}  className="float-end" height="100px"/>
+                    <img src= {tuit.image}  className="float-end" height="100px"/>
                 </div>
             </div>
         </li>

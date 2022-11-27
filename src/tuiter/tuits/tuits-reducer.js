@@ -71,8 +71,6 @@ const tuitsSlice = createSlice({
 
                                    },
 
-
-
                                    reducers: {
 
                                        deleteTuit(state, action) {
