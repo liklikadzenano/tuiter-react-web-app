@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../tuiter/explore/index.css" rel="stylesheet">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+</head>
+<body class="bg-black">
+
+
+    <div class="container pt-2">
+
+        <div class="row">
+
+            <!-- below is the left content -->
+            <div class="col-xxl-2 col-xl-3 col-lg-1 col-md-2 col-sm-1">
+            <!--using list-group to make the list of hyperlinks that we see on the left -->
+                <ul class="list-group">
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fab fa-twitter text-white"></i>
+                            </div>
+                            <div class="col-11 d-xxl-block d-xl-block d-lg-none d-md-none d-sm-none">
+                                <a href="#"> </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-home text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none d-md-none d-sm-none ">
+                                <a href="../home.html" class="text-white text-decoration-none"> Home </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-hashtag text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none d-md-none d-sm-none">
+                                <a href="index.html" class="text-decoration-none text-white"> Explore </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-bell text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none
+                            d-md-none d-sm-none ">
+                                <a href="index.html" class="text-decoration-none text-white">
+                                    Notifications </a>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none d-md-none
+                            d-sm-none">
+                                <a href="messages.html" class=" text-decoration-none text-white"> Messages </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-list text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none d-md-none
+                             d-sm-none">
+                                <a href="#" class="text-decoration-none text-white"> Lists </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-user-alt text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none d-md-none d-sm-none">
+                                <a href="../profile.html" class="text-white text-decoration-none">
+                                    Profile </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-black">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-comment-dots text-white"></i>
+                            </div>
+                            <div class="col-10 d-xxl-block d-xl-block d-lg-none d-md-none d-sm-none">
+                                <a href="#" class="text-decoration-none text-white"> More </a>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button class="btn btn-primary w-100 mt-1 rounded-pill " > Tuit </button>
+
+            </div>
+
+
+        <!--middle content below -->
+            <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-10 col-sm-11 ">
+        <!--below is a search input field-->
+                <div class="row">
+                    <div class="col-10">
+                        <div class="position-relative">
+                            <input class="ps-5 form-control rounded-pill bg-dark border-0" placeholder="Search Tuiter"/>
+                            <i class="fad fa-search position-absolute wd-search-tuiter"> </i>
+                        </div>
+                    </div>
+
+                    <div class="col-2 pt-1">
+                        <i class="fas fa-cog fa-lg" style="color: white"></i>
+                    </div>
+
+
+                </div>
+
+                <ul class="nav nav-tabs pt-3 mb-1 fw-normal border-dark border-bottom-1  ">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"> For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">COVID-19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#" tabindex="-1">Sports</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white text-decoration-underline" href="#" tabindex="-1">Entertainment</a>
+                    </li>
+                </ul>
+
+                <!--below div groups the picture and the title on the picture together -->
+                <div class="position-relative">
+                <img src="universe.jpeg" width="100%"/>
+                </div>
+                <!--React-JS list item -->
+                <ul class="list-group">
+                    <li class="list-group-item bg-black border-1 border-dark">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text-white fs-6"> Music - Last night </div>
+
+                                <div class="fw-bold text-white fs-4">
+                                    BTS and Coldplay release their new song, My
+                                    Univese
+                                    <span class="text-warning">
+                                    <i class="fad fa-planet-ringed"></i> </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                    <li class="list-group-item bg-black border-dark border-1">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="text-secondary fs-6">
+                                    Trending in R&B & soul
+                                </div>
+                                <div class="fw-bolder text-white">
+                                    R Kelly
+                                </div>
+
+                                <div class="text-secondary">
+                                    123K Tuits
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <i class="fas fa-ellipsis-h text-secondary float-end "></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="list-group-item bg-black border-dark border-1">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="text-secondary fs-6"> Trending in R&B & soul </div>
+
+                                <div class="fw-bolder text-white">
+                                    Chloe
+
+                                </div>
+
+                                <div class="text-secondary">
+                                    Trending with <span class="text-info"> Halle </span>
+                                </div>
+
+
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-ellipsis-h text-secondary float-end "></i>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li class="list-group-item bg-black border-dark border-1">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="text-white"> T Times
+                                    <span class="text-white">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>
+                                    <span class="text-secondary fs-6"> September 24, 2021</span>
+                                </div>
+
+                                <div class="text-white fw-bold">
+                                    Stanley Tucci: "Food or Sex? That's the cruellest question..."
+                                </div>
+
+                                <div class="text-secondary">
+                                    123K Tuits
+                                </div>
+
+                            </div>
+                            <div class="col-2">
+                                <img class="rounded float-end" src="Stanley%20Tucci.webp" height="100px">
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        <!--right content below-->
+            <div class="col-xxl-4 col-xl-3 col-lg-4 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none ">
+                 <ul class="list-group ">
+                    <li class="list-group-item fw-bolder wd-ul text-white">
+                        Who to follow
+                    </li>
+
+                    <li class="list-group-item wd-ul">
+                        <div class="row">
+<!--                            left side images-->
+                            <div class="col-xxl-2 col-xl-3 col-lg-3 ">
+                                <img src="bee.jpg" class="rounded-circle" width="48px" height="48px">
+                            </div>
+<!--                            middle texts-->
+                            <div class="col-xxl-7 col-xl-5 col-lg-5">
+                                <div class="fw-bolder text-white"> The babylon Bee <i class="fas fa-check-circle"></i> </div>
+                                <div class="text-secondary"> @TheBabylonBee </div>
+<!--                                buttons-->
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4">
+                                <button class="btn btn-light w-30 mt-1 rounded-pill position-relative " > Follow </button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="list-group-item wd-ul">
+                        <div class="row">
+                            <div class="col-xxl-2 col-xl-3 col-lg-3 ">
+                                <img src="jack.jpeg" class="rounded-circle" width="48px" height="48px">
+                            </div>
+                            <div class="col-xxl-7 col-xl-5 col-lg-5">
+                                <div class="fw-bolder text-white"> Jack Posobiec <i class="fas fa-flag-usa"></i>
+                                    <i class="fas fa-check-circle"> </i> </div>
+                                <div class="text-secondary"> @JackPosobieck </div>
+
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4">
+                                <button class="btn btn-light w-30 mt-1 rounded-pill position-relative" > Follow </button>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="list-group-item wd-ul">
+                         <div class="row">
+                             <div class="text-primary ">
+                                 Show more
+                             </div>
+
+                         </div>
+                     </li>
+
+
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    /*background-color: black;*/
+    /*color: white;*/
+    /*margin-left: 2%;*/
+    /*margin-right: 2%;*/
+}
+
+.wd-ul {
+    background-color: #1D1E20;
+}
+
+/* all the text elements below */
+h4 {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    font-family: "Helvetica Neue";
+}
+
+h3 {
+   color: white;
+    font-size: 15px;
+    font-family: "Helvetica Neue";
+}
+
+.wd-dot {
+    color: rgb(110, 118, 125);
+}
+
+.wd-nav-tabs {
+    color: rgb(110,118,125);
+    padding: 15px;
+    border-width: 0px;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-cuomo-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px
+}
+
+.wd-covid-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px
+}
+
+
+.wd-booster-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 16px
+}
+
+.wd-nav-tabs .wd-selected {
+    color: rgb(29,161,241);
+
+
+}
+
+.wd-nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5%;
+    font-family: "Helvetica Neue";
+
+}
+
+.wd-search {
+    width: 85%;
+    height: 30px;
+    background-color: dimgray;
+    border-radius: 20px;
+}
+
+.wd-search::placeholder {
+    color: white;
+    font-size: 15px;
+    opacity: 1;
+    font-family: "Helvetica Neue";
+}
+
+
+
+
+
+/* using the flex to organize the tweets */
+.wd-tweets {
+    padding: 15px;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    display: flex;
+    justify-content: space-between;
+}
+.wd-flexbox {
+    border-width: 1px;
+    border-color: rgb(47,51,54);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-search-box {
+    padding: 15px;
+    padding-top: 10px;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wd-checked {
+    color: white;
+}
+
+.wd-yesterday {
+    color: grey;
+}
+
+.wd-gear {
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 12px;
+
+}
+
+.wd-picture-parent {
+    position:relative;
+}
+
+.wd-picture-title {
+    position: absolute;
+    color: white;
+    bottom: 1px;
+    left: 0px;
+
+}
+
+.wd-search-tuiter {
+    bottom: 10px;
+    left: 10px;
+
+}
+

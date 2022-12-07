@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom:-2px;
+    margin-left: 16px;
+}
+
+.wd-handle {
+    color: dimgray;
+    font-size: 13px;
+    padding-top: 0px;
+    margin-left: 16px;
+}
+
+.wd-dot-blue {
+    color: dodgerblue;
+    margin-right: 16px;
+}
+
+.wd-bookmark-flex {
+    padding-right: 15px;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*below we will be styling ivan zubrin */
+
+.wd-ivan-zubrin {
+    border-left: solid rgb(47,51,54) 0.1px;
+    border-right: solid rgb(47,51,54) 0.1px;
+    border-bottom: solid rgb(47,51,54) 0.1px;
+}
+
+.wd-icon-image {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    margin-top: 16px;
+    margin-left: 16px;
+    float: left;
+
+}
+
+.wd-author {
+    margin-left: 12px;
+    margin-top: 12px;
+    float: left;
+}
+
+.wd-post-one {
+    color: white;
+    font-size: 15px;
+    font-family: "Times New Roman";
+
+}
+.wd-post-one .wd-span {
+    color: grey;
+}
+
+.wd-dot-gray {
+    color: gray;
+    margin-right: 16px;
+}
+
+.wd-author-float-right {
+    margin-right: 16px;
+    float: right;
+
+}
+
+.wd-post-text {
+    padding-top: 45px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    float: bottom ;
+    margin-left: 60px;
+    width: 500px;
+    font-size: 15px;
+    color: white;
+}
+
+/*this part deals with styling of first post image */
+
+.wd-nature-post {
+    color: rgb(47,51,54);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 60px;
+    margin-right: 12px;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.wd-nature-post .wd-nature-image {
+    height:264px;
+    width: 504px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-left: 0px;
+}
+
+
+.wd-nature-post-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.wd-nature-text {
+    color: grey;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: -2px;
+    border-radius: 25px;
+
+}
+
+.wd-horizontal {
+    color:rgb(47,51,54);
+    border-style: solid;
+
+}
+.wd-list-of-icons li {
+    display: inline-block;
+
+}
+
+
+.wd-list-of-icons {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wd-num {
+    color: gray;
+}
+
+.wd-links {
+    color: gray;
+    padding-right: 12px;
+}
+.wd-heart{
+    color: red;
+}
+
+
+
+
+
